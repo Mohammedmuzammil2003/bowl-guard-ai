@@ -2,41 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* CricketAI Design System - Professional Sports Analytics Theme */
 
 @layer base {
   :root {
+    /* Cricket Field Green + Tech Blue + Professional White Theme */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 217 19% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 217 19% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 217 19% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Cricket Green Primary */
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Cricket Field Variants */
+    --cricket-green: 142 76% 36%;
+    --cricket-green-light: 142 50% 55%;
+    --cricket-green-dark: 142 85% 25%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Tech Blue Secondary */
+    --secondary: 214 95% 93%;
+    --secondary-foreground: 214 84% 12%;
+    --tech-blue: 214 84% 56%;
+    --tech-blue-light: 214 95% 93%;
+    --tech-blue-dark: 214 84% 12%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Professional Grays */
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 8.9% 46.1%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 220 14% 96%;
+    --accent-foreground: 220 8.9% 46.1%;
 
+    /* Status Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 48 96% 53%;
+    --warning-foreground: 48 96% 13%;
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 142 76% 36%;
 
-    --radius: 0.5rem;
+    /* Cricket Themed Gradients */
+    --gradient-cricket: linear-gradient(135deg, hsl(var(--cricket-green)), hsl(var(--cricket-green-light)));
+    --gradient-tech: linear-gradient(135deg, hsl(var(--tech-blue)), hsl(var(--tech-blue-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--cricket-green)), hsl(var(--tech-blue)));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 14% 98%));
+
+    /* Professional Shadows */
+    --shadow-cricket: 0 10px 30px -10px hsl(var(--cricket-green) / 0.3);
+    --shadow-tech: 0 10px 30px -10px hsl(var(--tech-blue) / 0.3);
+    --shadow-elegant: 0 4px 24px -8px hsl(220 8.9% 46.1% / 0.2);
+
+    /* Smooth Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 

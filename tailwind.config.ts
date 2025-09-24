@@ -47,6 +47,25 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Cricket Theme Colors
+        cricket: {
+          green: "hsl(var(--cricket-green))",
+          "green-light": "hsl(var(--cricket-green-light))",
+          "green-dark": "hsl(var(--cricket-green-dark))",
+        },
+        tech: {
+          blue: "hsl(var(--tech-blue))",
+          "blue-light": "hsl(var(--tech-blue-light))",
+          "blue-dark": "hsl(var(--tech-blue-dark))",
+        },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -62,6 +81,25 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        "gradient-cricket": "var(--gradient-cricket)",
+        "gradient-tech": "var(--gradient-tech)", 
+        "gradient-hero": "var(--gradient-hero)",
+        "gradient-card": "var(--gradient-card)",
+      },
+      boxShadow: {
+        "cricket": "var(--shadow-cricket)",
+        "tech": "var(--shadow-tech)",
+        "elegant": "var(--shadow-elegant)",
+      },
+      transitionTimingFunction: {
+        "smooth": "var(--transition-smooth)",
+        "bounce": "var(--transition-bounce)",
+      },
+      fontFamily: {
+        sans: ["Inter", "system-ui", "sans-serif"],
+        heading: ["Poppins", "Inter", "system-ui", "sans-serif"],
       },
       keyframes: {
         "accordion-down": {
