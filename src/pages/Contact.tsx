@@ -177,29 +177,9 @@ const Contact = () => {
                   <div className="flex items-start gap-3 p-4 bg-cricket-green/10 rounded-lg">
                     <Mail className="h-5 w-5 text-cricket-green mt-1" />
                     <div>
-                      <div className="font-medium">Technical Inquiries</div>
+                      <div className="font-medium">Project Inquiries</div>
                       <div className="text-sm text-muted-foreground">
-                        Contact Mohammed Muzammil for AI/ML and backend questions
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-3 p-4 bg-tech-blue/10 rounded-lg">
-                    <User className="h-5 w-5 text-tech-blue mt-1" />
-                    <div>
-                      <div className="font-medium">UI/UX Feedback</div>
-                      <div className="text-sm text-muted-foreground">
-                        Contact Amaan Ebrahim for frontend and design discussions
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-3 p-4 bg-warning/10 rounded-lg">
-                    <Github className="h-5 w-5 text-warning mt-1" />
-                    <div>
-                      <div className="font-medium">Integration Support</div>
-                      <div className="text-sm text-muted-foreground">
-                        Contact Afrid KA for system integration and API questions
+                        Contact Shaz Hani for project-related questions
                       </div>
                     </div>
                   </div>
