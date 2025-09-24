@@ -16,31 +16,19 @@ const Contact = () => {
   const teamMembers = [
     {
       name: "Mohammed Muzammil",
-      phone: "6363928976",
-      role: "AI/ML Lead & Backend Development",
-      expertise: ["MediaPipe Integration", "Deep Learning Models", "Python/Flask"],
-      avatar: "MM"
+      phone: "6363928976"
     },
     {
       name: "Shaz Hani",
-      phone: "7625015979", 
-      role: "Computer Vision & Analytics",
-      expertise: ["Pose Estimation", "Video Processing", "Data Analysis"],
-      avatar: "SH"
+      phone: "7625015979"
     },
     {
       name: "Amaan Ebrahim",
-      phone: "9137283330",
-      role: "Frontend Development & UI/UX",
-      expertise: ["React/TypeScript", "UI Design", "User Experience"],
-      avatar: "AE"
+      phone: "9137283330"
     },
     {
       name: "Afrid KA",
-      phone: "8660198269",
-      role: "System Integration & Testing",
-      expertise: ["API Integration", "Testing", "DevOps"],
-      avatar: "AK"
+      phone: "8660198269"
     }
   ];
 
@@ -123,41 +111,16 @@ const Contact = () => {
               {teamMembers.map((member, index) => (
                 <Card key={index} className="shadow-elegant hover:shadow-cricket transition-smooth">
                   <CardContent className="p-6">
-                    <div className="flex items-start gap-4">
-                      {/* Avatar */}
-                      <div className="w-16 h-16 bg-gradient-cricket rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0">
-                        {member.avatar}
-                      </div>
-                      
-                      {/* Member Info */}
-                      <div className="flex-1 space-y-3">
-                        <div>
-                          <h3 className="text-xl font-semibold">{member.name}</h3>
-                          <p className="text-cricket-green font-medium">{member.role}</p>
-                        </div>
-                        
-                        {/* Contact */}
-                        <div className="flex items-center gap-2">
-                          <Phone className="h-4 w-4 text-muted-foreground" />
-                          <a 
-                            href={`tel:${member.phone}`}
-                            className="text-tech-blue hover:underline font-medium"
-                          >
-                            {member.phone}
-                          </a>
-                        </div>
-                        
-                        {/* Expertise */}
-                        <div>
-                          <div className="text-sm text-muted-foreground mb-2">Expertise:</div>
-                          <div className="flex flex-wrap gap-1">
-                            {member.expertise.map((skill, skillIndex) => (
-                              <Badge key={skillIndex} variant="outline" className="text-xs">
-                                {skill}
-                              </Badge>
-                            ))}
-                          </div>
-                        </div>
+                    <div className="flex items-center justify-between">
+                      <h3 className="text-xl font-semibold">{member.name}</h3>
+                      <div className="flex items-center gap-2">
+                        <Phone className="h-4 w-4 text-muted-foreground" />
+                        <a 
+                          href={`tel:${member.phone}`}
+                          className="text-tech-blue hover:underline font-medium"
+                        >
+                          {member.phone}
+                        </a>
                       </div>
                     </div>
                   </CardContent>
